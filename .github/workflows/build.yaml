@@ -35,7 +35,7 @@ jobs:
         run: ls -lah build/distributions
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: v${{ env.CI_BUILD_VERSION }}
           path: build/distributions/*.zip
