@@ -30,6 +30,9 @@ jobs:
         run: |
           chmod 777 gradlew
           ./gradlew buildPlugin
+          
+      - name: Debug build output
+        run: ls -lah build/distributions
 
       - name: Upload artifact
         uses: actions/upload-artifact@v3
